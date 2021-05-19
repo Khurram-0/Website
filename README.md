@@ -1,2 +1,4 @@
-# This repository contain files for my personal website at 
-# https://0saitama0.github.io/Website/
+# Khurram-Website
+This repository contains files for my website.
+To visit the website go to the following link:
+https://0saitama0.github.io/Website/
