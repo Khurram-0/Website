@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<title>Khurram's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body{
+   background-image: url('chip.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+/*Container*/
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* random button */
+.random {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  padding-left:10px;
+  padding-right:10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: black;
+}
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:250px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="Notes_210518_203636_da6.png" style="width:100%;" class="w3-round">
+    <h4><b><a href="#forest" onclick="w3_close()" style="text-decoration: none;">KHURRAM BHATTI</a></b></h4>
+  </div>
+
+  <div class="w3-bar-block">
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+
+<!--Qoute Image & Random Site-->
+ <div class="container" id:"home">
+  <img src="forest.jpg" id="forest" style="width:100%;">
+  <div class="centered" style="font-size:20px">Four things support the world: the 
+  learning of the wise, the justice of the great, the prayers of the good, and the valor of the brave</div>
+  <a class="random" href="https://theuselessweb.com/" target="_blank" style="text-decoration: none;">Random Button</a>
+</div> 
+
+
+  <!-- Header -->
+  <header id="projects">
+    <a href="#"><img src="Notes_210518_203636_da6.png" style="width:65px;height:65px" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>PROJECTS</b></h1>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="FunctionGenerator.png" alt="Generator" style="width:100%">
+      <div class="w3-container w3-white">
+        <p><b>Function Generator</b></p>
+        <p>Designed using calculations by hand and simulated in NI multisim. Capabilities include waveform 
+		selection, output amplitude control, frequency range control, and frequency control. Was a great experience 
+		building the various stages. The design & problem solving aspect (i.e. being able to make design choices and developing solutions) was the most fun aspect.</p>
+      </div>
+    </div>
+	<div class="w3-third w3-container w3-margin-bottom">
+      <img src="digital_dice.jpg" alt="Dice" style="width:100%">
+      <div class="w3-container w3-white">
+        <p><b>Digital Dice</b></p>
+        <p>Programmed using assembly language. Push and hold button to cycle through numbers 1 to 9 extremely quickly 
+		(not visible to human eye). Then release button to stop at a number (creates effect of random number selection). Used 555 timer, AND gates, programmable 
+		chip and 7-segment display. First time playing around with EEPROM (i.e. programmable) chips and assembly code. Was a great learning experience</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="radio.jpg" alt="Radio" style="width:100%">
+      <div class="w3-container w3-white">
+        <p><b>Radio</b></p>
+        <p>Features variable capacitor made using aluminum foil and paper for tuning audio quality. 
+		Coil with "taps" to select frequency. Most components were made from house hold items, 
+		Op-amp (LM741CN) was later used as diode and for amplification & improving signal quality even further.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="autonomous_robot_1.jpg" alt="Robot" style="width:100%">
+      <div class="w3-container w3-white">
+        <p><b>Autonomous Robot</b></p>
+        <p>Made using arduino, ultrasonic sensors and infrared sensors (under robot). Made to fight other robots 
+		in a sumo-style battle. Detects surroundings using sensors and adapts accordingly. Robot body (purple) designed in 
+		CAD software and 3D-printed.</p>
+      </div>
+    </div>
+	<div class="w3-third w3-container w3-margin-bottom">
+      <img src="HoverCraft.png" alt="HoverCraft" style="width:100%">
+      <div class="w3-container w3-white">
+        <p><b>HoverCraft</b></p>
+        <p>Built during my first year at University Engineering Competition. All participants given same budget and task. Had 6 hours to design, build, test, 
+		and present solution to judges. Worked with a team of 4 to develop a solution in a high stress environment 
+		- given the limitations (e.g. time, budget, limited number of tests). 
+		Won 3rd place out of 100 fellow Engineering students</p>
+      </div>
+    </div>
+		<div class="w3-third w3-container w3-margin-bottom">
+      <img src="USBwarmer.jpg" alt="USBwarmer" style="width:100%">
+      <div class="w3-container w3-white">
+        <p><b>USB Warmer</b></p>
+        <p>First time doing crochet. This is great for keeping USBs warm during the winter. Can also double as a finger warmer 
+		(only one finger at a time though)</p>
+      </div>
+    </div>
+  </div>
+ 
+<!-- 3rd Photo Grid-->
+    <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="mouseHolder.jpg" alt="Mouse" style="width:100%">
+      <div class="w3-container w3-white">
+        <p><b>Mouse Holder</b></p>
+        <p>Playing around with crochet techniques - doing random stuff. Ended up with something that fit
+		can fit a mouse (both kinds). Was a great learning experience - used some of these techniques to make the laptop case later.
+		</p>
+      </div>
+    </div>
+	<div class="w3-third w3-container w3-margin-bottom">
+      <img src="LaptopCase_3.jpg" alt="Radio" style="width:100%">
+      <div class="w3-container w3-white">
+        <p><b>Crochet Laptop Case</b></p>
+        <p>Laptop case made using crochet techniques. Took around 1 week to complete, requiring alot of focus and patience. 
+		Great for keeping laptop screen and keyboard clean as well!</p>
+      </div>
+    </div>
+	<div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>And Many More...</b></p>
+        <p>Could not find some projects. Some had to be left behind at previous homes, like
+		a redesigned Relay Switch for a washing machine. The original was discontinued - couldn't find one anywhere.
+		I had to develop a new Relay switch to work with the washing machines PCB and repair it once and for all!</p>
+      </div>
+    </div>
+ 
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b id="about">About Me</b></h4>
+    <p>I'm an Electrical Engineering student at Toronto Metropolitan University (formaly Ryerson University) and will complete my Bachlors in April 2023.
+	    I am a quick learner and am observent of finer details. I enjoy taking on challenging problems and maintain a solution based forward thinking.
+	    In my experience working as a Research Engineer, it was essential to hone these skills for the creation of new hardware+software solutions 
+	    for a variety of problems. As well as in the research and development of future products.
+	</p>
+    <hr>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Info</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-red"></i></p>
+       
+		<p>khurram.b@hotmail.com</p>
+      </div>
+	  <div class="w3-third w3-teal">
+        <p><img src="github.png" style="width:50px;height:50px;"></i></p>
+        <p><a href="https://github.com/Khurram-0" target="_blank">https://github.com/Khurram-0</a></p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Ontario, Canada</p>
+      </div>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
