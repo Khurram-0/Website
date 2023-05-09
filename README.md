@@ -1,2 +1,2 @@
 # Website
-This repository contains files for my website (khurram-0.github.io/Website/)
+This repository contains files for my website: https://khurram-0.github.io/Website/
