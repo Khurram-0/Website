@@ -45,6 +45,7 @@ body{
   padding-bottom: 5px;
   background-color: black;
 }
+
 </style>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -55,7 +56,9 @@ body{
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="Notes_210518_203636_da6.png" style="width:100%;" class="w3-round">
+    <a href>
+      <img src="Notes_210518_203636_da6.png" style="width:100%;" class="w3-round">
+    </a>
     <h4><b><a href="#forest" onclick="w3_close()" style="text-decoration: none;">KHURRAM BHATTI</a></b></h4>
   </div>
 
@@ -92,33 +95,89 @@ body{
     </div>
   </header>
   
-  <!-- First Photo Grid-->
+<!-- Zeroth Photo Grid-->
+<div class="w3-row-padding">
+  <div class="w3-third w3-container w3-margin-bottom">
+
+    <a href="Battery_3cells.png">
+      <img src="Battery_3cells.png" alt="Battery" style="width:100%">
+    </a>
+    <a href="Battery_12cellpack.png">
+      <img src="Battery_12cellpack.png" alt="Battery" style="width:100%">
+    </a>
+
+    <div class="w3-container w3-white">
+      <p><b>Battery Mgmt & DC Fast Charger </b></p>
+      <p>Lithium-ion Battery pack management system for EVs. Built & Simulated in Simulink with passive balancing system (R=36 Ω each cell). 
+        <b>1)</b> Top Image: 3 Batteries in series to form a cell <b>2)</b> Bottom Image: 12 cells in series to form pack. 
+        <b>3)</b> Constant Current Constant Voltage (CCCV) charging profile <b>4)</b> 48 min to charge from 20% to 100% SoC at 1C rate</p>
+    </div>
+  </div>
+
+<div class="w3-third w3-container w3-margin-bottom">
+  <a href="PID_control_model.png">
+    <img src="PID_control_model.png" alt="PID" style="width:100%">
+  </a>
+  <a href="PID_control.png">
+    <img src="PID_control.png" alt="PID" style="width:100%">
+  </a>
+
+    <div class="w3-container w3-white">
+      <p><b>PID Control for a Motor Module (RTOS)</b></p>
+      <p>Programmed in C with options to change parameters, input type (square or step), and to plot motor position on screen. 
+        <b>1)</b> DLaB Library Funcitons to simplify interfacing with motor module. <b>2)</b> Forward rectangular rule to perform numerical integration
+        & backward difference rule for differentiation <b>3)</b> Plot on right side is without Anti-Windup</p>
+    </div>
+  </div>
+
+  <div class="w3-third w3-container w3-margin-bottom">
+    <a href="ETAP_3phase_balanced.png">
+      <img src="ETAP_3phase_balanced.png" alt="center image" style="height: 100px;" >
+    </a>
+    <a href="ETAP_bus2-fault.png">
+      <img src="ETAP_bus2-fault.png" alt="Radio" style="width:100%">
+    </a>
+
+    <div class="w3-container w3-white">
+      <p><b>3-Phase Fault Analysis</b></p>
+      <p><b>1)</b> Per-unit conversion of all impedance values (using 13.8V base voltage for one of 
+        the generators to develop ETAP model) <b>2)</b> Hand calculations of sub-transient fault currents
+        <b>3)</b> Tested/ simulated in ETAP with bolted fault at Bus 2 with Short-Circuit report</p>
+    </div>
+  </div>
+</div>
+
+<!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="FunctionGenerator.png" alt="Generator" style="width:100%">
+      <a href="FunctionGenerator.png">
+        <img src="FunctionGenerator.png" alt="Generator" style="width:100%">
+      </a>
       <div class="w3-container w3-white">
         <p><b>Function Generator</b></p>
-        <p>Designed using calculations by hand and simulated in NI multisim. Capabilities include waveform 
-		selection, output amplitude control, frequency range control, and frequency control. Was a great experience 
-		building the various stages. The design & problem solving aspect (i.e. being able to make design choices and developing solutions) was the most fun aspect.</p>
+        <p>Based on LM318N op-amps. Designed using hand calculations and simulated in NI Multisim. Capabilities include: <b>1)</b> Waveform 
+		selection, <b>2)</b> Output amplitude control, <b>3)</b> Frequency range control, and <b>4)</b> Frequency control</p>
       </div>
     </div>
 	<div class="w3-third w3-container w3-margin-bottom">
+    <a href="digital_dice.jpg">
       <img src="digital_dice.jpg" alt="Dice" style="width:100%">
+    </a>
       <div class="w3-container w3-white">
         <p><b>Digital Dice</b></p>
-        <p>Programmed using assembly language. Push and hold button to cycle through numbers 1 to 9 extremely quickly 
-		(not visible to human eye). Then release button to stop at a number (creates effect of random number selection). Used 555 timer, AND gates, programmable 
-		chip and 7-segment display. First time playing around with EEPROM (i.e. programmable) chips and assembly code. Was a great learning experience</p>
+        <p>Programmed in assembly language and 'burned' onto a EEPROM microchip. <b>1)</b> Push and hold button to cycle through numbers 1 to 9 extremely quickly 
+		(not visible to human eye). <b>2)</b> Then release button to stop at a number (creates effect of random number selection). <b>3)</b> Used 555 timer, AND gates, programmable 
+		chip and 7-segment display</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="radio.jpg" alt="Radio" style="width:100%">
+      <a href="radio.jpg">
+        <img src="radio.jpg" alt="Radio" style="width:100%">
+      </a>
       <div class="w3-container w3-white">
-        <p><b>Radio</b></p>
-        <p>Features variable capacitor made using aluminum foil and paper for tuning audio quality. 
-		Coil with "taps" to select frequency. Most components were made from house hold items, 
-		Op-amp (LM741CN) was later used as diode and for amplification & improving signal quality even further.</p>
+        <p><b>Radio From Scrap Material</b></p>
+        <p>Features: <b>1)</b> Variable capacitor made using aluminum foil and paper for tuning audio quality. 
+          <b>2)</b> Coil of wire with "taps" to select frequency. Op-amp (LM741CN) was later used as diode and for amplification & improving signal quality even further.</p>
       </div>
     </div>
   </div>
@@ -126,72 +185,75 @@ body{
   <!-- Second Photo Grid-->
     <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="autonomous_robot_1.jpg" alt="Robot" style="width:100%">
+
+      <a href="autonomous_robot_1.jpg">
+        <img src="autonomous_robot_1.jpg" alt="Robot" style="width:100%">
+      </a>
+      <a href="autonomous_robot_23.jpg">
+        <img src="autonomous_robot_23.jpg" alt="Robot" style="width:100%">
+      </a>
+
       <div class="w3-container w3-white">
-        <p><b>Autonomous Robot</b></p>
-        <p>Made using arduino, ultrasonic sensors and infrared sensors (under robot). Made to fight other robots 
-		in a sumo-style battle. Detects surroundings using sensors and adapts accordingly. Robot body (purple) designed in 
-		CAD software and 3D-printed.</p>
+        <p><b>Autonomous Fighting Robot</b></p>
+        <p>Used arduino nano, ultrasonic sensors, infrared sensors, and algorithms in Arduino Programming language. Robot body designed in 
+          CAD software and 3D-printed. Made to fight other robots 
+		in a sumo-style battle. <b>1)</b> Detects surroundings using sensors and <b>2)</b> Acts accordingly, to knock robots out of ring and WIN!</p>
       </div>
     </div>
 	<div class="w3-third w3-container w3-margin-bottom">
+    <a href="HoverCraft.png">
       <img src="HoverCraft.png" alt="HoverCraft" style="width:100%">
+    </a>
       <div class="w3-container w3-white">
-        <p><b>HoverCraft</b></p>
-        <p>Built during my first year at University Engineering Competition. All participants given same budget and task. Had 6 hours to design, build, test, 
-		and present solution to judges. Worked with a team of 4 to develop a solution in a high stress environment 
-		- given the limitations (e.g. time, budget, limited number of tests). 
-		Won 3rd place out of 100 fellow Engineering students</p>
+        <p><b>Engineering Competition: HoverCraft Design</b></p>
+        <p>Built during Universities Engineering Competition: <b>1)</b> All groups given same budget and task. <b>2)</b> 6 hours to design, buy materials, build, test, 
+		and present solution to judges. <b>3)</b> Developed solution in the high stress environment, won 3rd place</p>
       </div>
     </div>
 		<div class="w3-third w3-container w3-margin-bottom">
-      <img src="USBwarmer.jpg" alt="USBwarmer" style="width:100%">
-      <div class="w3-container w3-white">
+      <a href="USBwarmer.jpg">
+        <img src="USBwarmer.jpg" alt="USBwarmer" style="width:100%">
+      </a>
+        <div class="w3-container w3-white">
         <p><b>USB Warmer</b></p>
         <p>First time doing crochet. This is great for keeping USBs warm during the winter. Can also double as a finger warmer 
-		(only one finger at a time though)</p>
+		(only one finger at a time though, so choose wisely)</p>
       </div>
     </div>
   </div>
  
 <!-- 3rd Photo Grid-->
-    <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="mouseHolder.jpg" alt="Mouse" style="width:100%">
-      <div class="w3-container w3-white">
-        <p><b>Mouse Holder</b></p>
-        <p>Playing around with crochet techniques - doing random stuff. Ended up with something that fit
-		can fit a mouse (both kinds). Was a great learning experience - used some of these techniques to make the laptop case later.
-		</p>
-      </div>
-    </div>
+  <div class="w3-row-padding">
 	<div class="w3-third w3-container w3-margin-bottom">
+    <a href="LaptopCase_3.jpg">
       <img src="LaptopCase_3.jpg" alt="Radio" style="width:100%">
+    </a>
       <div class="w3-container w3-white">
         <p><b>Crochet Laptop Case</b></p>
-        <p>Laptop case made using crochet techniques. Took around 1 week to complete, requiring alot of focus and patience. 
+        <p>Laptop case made using crochet techniques. Took around 1 week to complete, requiring lots of focus and patience. 
 		Great for keeping laptop screen and keyboard clean as well!</p>
       </div>
     </div>
 	<div class="w3-third w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
-        <p><b>And Many More...</b></p>
-        <p>Could not find some projects. Some had to be left behind at previous homes, like
-		a redesigned Relay Switch for a washing machine. The original was discontinued - couldn't find one anywhere.
-		I had to develop a new Relay switch to work with the washing machines PCB and repair it once and for all!</p>
+        <p><b>To be continued...</b></p>
+        <p>Non visual projects (dont have images of it) includes: a Relay Switch for a washing machine. The original was discontinued.
+		I had to build a new Relay switch from scrap materials to work with the washing machines PCB and repair it once and for all - still working 3 years strong</p>
       </div>
     </div>
  
   <div class="w3-container w3-padding-large" style="margin-bottom:32px">
     <h4><b id="about">About Me</b></h4>
-    <p>I'm an Electrical Engineering student at Toronto Metropolitan University (formaly Ryerson University) and will complete my Bachlors in April 2023.
-	    I am a quick learner and am observent of finer details. I enjoy taking on challenging problems and maintain a solution based forward thinking.
-	    In my experience working as a Research Engineer, it was essential to hone these skills for the creation of new hardware+software solutions 
-	    for a variety of problems. As well as in the research and development of future products.
-	</p>
+    <p>I'm an new Engineering grad (Toronto Metropolitan University, Formally Ryerson) Spring 2023 graduation.
+	    I am a quick learner, patient, and perseverant. I enjoy taking on challenging problems and like to maintain a solution based forward thinking
+	  </p>
+    <p>
+      During my 4th year I worked as a Research Engineer at Tribute Kiosk Inc. Where it was essential to hone these skills for the creation of IoT solutions (hardware+software Research). 
+      This also included the research and development of new product leads
+	  </p>
     <hr>
   
-  <!-- Contact Section -->
+<!-- Contact Section -->
   <div class="w3-container w3-padding-large w3-grey">
     <h4 id="contact"><b>Contact Info</b></h4>
     <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
